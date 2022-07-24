@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravitational Force Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="gravitationalForceRadio" name="variables" checked>
+  <label for="gravitationalForceRadio">Gravitational force</label>
+
+  <input type="radio" id="mass1Radio" name="variables">
+  <label for="mass1Radio">Mass 1</label>
+
+  <input type="radio" id="mass2Radio" name="variables">
+  <label for="mass2Radio">Mass 2</label>
+  
+  <input type="radio" id="distanceRadio" name="variables">
+  <label for="distanceRadio">Distance</label><br><br>
+  
+  
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(M) Mass 1 (kg)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(m) Mass 2 (kg)</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(R) Distance (m)</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
